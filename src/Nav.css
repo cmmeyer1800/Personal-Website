@@ -1,0 +1,11 @@
+.logo{
+    border: 1px solid black;
+    /* margin-left  : 2px; */
+    /* margin-top: 1px; */
+    border-radius: 10px;
+}
+
+.border-bot{
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+}

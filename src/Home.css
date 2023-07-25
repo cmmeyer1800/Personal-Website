@@ -1,0 +1,19 @@
+.rounded-image{
+  border-radius: 10px;
+}
+
+.act-elem{
+  transition: all .1s ease-in-out;
+}
+
+.act-elem:hover{
+  transform: scale(1.03);
+}
+
+.dark-border{
+  border: 1px solid #363636;
+}
+
+hr.is-dark{
+  border: 1px solid #363636;
+}
