@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home.js"
 import Layout from "./Layout.js";
 import NoPage from "./NoPage.js";
+import PersonalHome from "./PersonalHome.js";
 
 import 'bulma/css/bulma.min.css';
 
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/personal" element={<PersonalHome/>}/>
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
