@@ -16,12 +16,13 @@ jobs:
     name: Build and Deploy
 
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v1
       - name: Build React App
         uses: actions/setup-node@v1
         with:
           node-version: 8
-        - run: |
+        run: |
           npm i
           npm run build
       
