@@ -28,6 +28,8 @@ jobs:
         run: |
           npm install
           npm run build
+        env:
+          CI: ""
       
       - name: Deploy to Cloud
         uses: nogsantos/scp-deploy@master
