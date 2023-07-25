@@ -17,16 +17,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: 8
+          node-version: 19.3.0
 
       - name: Build React App
         run: |
-          npm i
+          npm install
           npm run build
       
       - name: Deploy to Cloud
