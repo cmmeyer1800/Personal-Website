@@ -34,4 +34,5 @@ jobs:
       - name: Deploy to Cloud
         run: |
           echo "${{ secrets.SSH_KEY }}" > tempkey
+          cat tempkey
           scp -i tempkey ./build/* -r ${{ secrets.SSH_HOST }}:${{ secrets.TARGET_DIR }}
