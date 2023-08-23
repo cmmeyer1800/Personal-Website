@@ -32,11 +32,5 @@ jobs:
           CI: ""
       
       - name: Deploy to Cloud
-        uses: nogsantos/scp-deploy@master
-        with:
-          src: ./build/*
-          host: ${{ secrets.SSH_HOST }}
-          remote: ${{ secrets.SSH_DIR }}
-          port: ${{ secrets.SSH_PORT }}
-          user: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+        run: |
+          scp ./build/* -r ${{ secrets.SSH_HOST }}:${{ secrets.TARGET_DIR }}

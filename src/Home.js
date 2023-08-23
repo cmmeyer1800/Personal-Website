@@ -17,8 +17,8 @@ const ActivityContent = () => {
                 <p className='subtitle'>Summer 2023 - Herndon Virginia</p>
                 <hr></hr>
                 <p className='content-para'>
-                  This summer I am interning at Hawkeye 360 doing both hardware and software,
-                  specifically on the testing team, and having a boat load of fun doing it.
+                  This summer I interned at Hawkeye 360 doing both hardware and software,
+                  specifically on the testing team. During that process y
                 </p>
               </article>
             </div>
@@ -48,7 +48,7 @@ const ActivityContent = () => {
               <hr className='is-dark'></hr>
               <div class="content">
                 For the previous semester I got to serve as a course assistant for ECE391, the University of Illinois'
-                premier operating systems class. During this time I was able to help over 100 students in understanding
+                premier operating systems class. During this time I was able to help over 200 students in understanding
                 operating systems material and also designing their own linux type OS. I have learned alot about how to
                 help others and specifically teach tough material in a digestable fashion.
               </div>
@@ -97,7 +97,8 @@ function Home() {
                 <h3 className='subtitle'>
                   → I'm a Computer Engineering student at the University of Illinois Urbana-Champaign
                   expecting to graduate in the spring of 24'.
-                  I was born and raised in the Northeast of Illinois for my whole life.
+                  I was born and raised in the Northeast of Illinois for my whole life. After college I
+                  hope to do hardware engineering somewhere I haven't lived before.
                 </h3>
                 <h3 className='subtitle has-text-centered'><span className='is-underlined'>Here's some of what I have done, and am doing</span>:</h3>
               </div>
