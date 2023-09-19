@@ -111,7 +111,7 @@ function Home() {
             </div>
           </div>
           <div className='column'>
-            <img className='rounded-image' src="/collin-sherman-fsae.png" alt="Me sitting on the formula SAE Car I helped build"></img>
+            <img className='rounded-image' src="/collin-sherman-fsae-small.webp" alt="Me sitting on the formula SAE Car I helped build"></img>
           </div>
         </div>
       </div>
