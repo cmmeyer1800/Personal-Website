@@ -33,4 +33,4 @@ jobs:
       
       - name: Deploy to Cloud
         run: |
-          scp ${{ secrets.SSH_HOST }}:${{ secrets.TARGET_DIR }}
+          scp ./build/* -r ${{ secrets.SSH_HOST }}:${{ secrets.TARGET_DIR }}
