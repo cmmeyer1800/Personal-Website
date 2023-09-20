@@ -6,7 +6,7 @@ const Nav = () => {
     const [navActive, setNavActive] = useState(false);
 
     return (
-        <nav class="navbar mt-1 mb-2 border-bot" role="navigation" aria-label="main navigation">
+        <nav class="navbar mt-1 border-bot" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <Link class="ml-1 navbar-item logo" to="/">
                     <h1 className="subtitle">CM</h1>

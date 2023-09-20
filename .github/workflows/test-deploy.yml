@@ -22,6 +22,8 @@ jobs:
 
       - name: Build React App
         run: |
+          rm -f .env
+          ln -s .env.test .env
           npm install
           npm run build
         env:

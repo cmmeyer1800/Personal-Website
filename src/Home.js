@@ -3,6 +3,8 @@ import './Home.css';
 import { Link } from "react-router-dom";
 import { FaArrowRight } from 'react-icons/fa'
 
+import DevWarning from "./devWarning.js"
+
 
 const ActivityContent = () => {
   return (
@@ -95,7 +97,8 @@ const ActivityContent = () => {
 function Home() {
   return (
     <>
-      <div className='container'>
+      <DevWarning />
+      <div className='container mt-2'>
         <div className='columns'>
           <div className='column'>
             <div className='container'>
