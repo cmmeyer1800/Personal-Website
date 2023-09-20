@@ -74,9 +74,16 @@ const ActivityContent = () => {
         <div class="tile is-parent">
           <article class="tile is-child notification is-dark act-elem">
             <div class="content">
-              <p class="title">Personal Projects</p>
+              <p class="title">Projects</p>
               <hr></hr>
-              <p class="subtitle">Coming Soon ...</p>
+              <p className='has-text-centered'>
+                <Link className='subtitle is-5' to="https://github.com/cmmeyer1800/personal_website">This Website!</Link>
+                <p></p>
+                <Link className='subtitle is-5' to="https://github.com/JasonRomps/RC5-Accelerator">RC5 Hardware Encryption Accelerator </Link>
+              </p>
+              <h2 className='subtitle'></h2>
+              <br></br>
+              <p class="has-text-centered subtitle">More Coming Soon ...</p>
             </div>
           </article>
         </div>

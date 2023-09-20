@@ -25,6 +25,7 @@ const Nav = () => {
             <div id="navbarBasicExample" class={`navbar-menu ${navActive ? 'is-active': ''}`}>
                 <div class="navbar-start">
                     <Link class="navbar-item" to="/">Home</Link>
+                    <Link className="navbar-item" to="/projects">Projects</Link> 
                     <Link class="navbar-item" to="/personal">Personal</Link>
                     {/* <Link class="navbar-item" to="/">Home</Link> */}
 
