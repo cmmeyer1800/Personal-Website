@@ -1,11 +1,9 @@
-name: Production Deployment
+name: Test Deployment
 
 on:
-  pull_request:
-    types:
-      - closed
+  push:
     branches:
-      - main
+      - test
   workflow_dispatch:
 
 jobs:
@@ -31,4 +29,4 @@ jobs:
       
       - name: Deploy to Cloud
         run: |
-          DEPLOY_PATH=${{ secrets.TARGET_DIR }} ./deploy -y
+          DEPLOY_PATH=${{ secrets.TEST_TARGET_DIR }} ./deploy -y
