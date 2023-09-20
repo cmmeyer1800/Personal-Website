@@ -9,7 +9,7 @@ const Footer = () => {
                     <br></br>
                     Use this link to <strong><Link to={"/contact"} className="has-text-dark">Contact</Link></strong> me
                     <br></br>
-                    Last Updated: Sep 19, 2023 @ 10:27 PM
+                    Last Updated: Sep 19, 2023 @ 11:33 PM
                 </p>
             </div>
         </footer>
