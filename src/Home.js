@@ -14,11 +14,13 @@ const ActivityContent = () => {
               <article class="tile is-child notification is-dark act-elem">
                 <img src="/he360-logo.svg" alt='Hawkeye 360 Logo'></img>
                 <p class="title">Hardware/Software Engineering Intern</p>
-                <p className='subtitle'>Summer 2023 - Herndon Virginia</p>
+                <p className='subtitle'>Summer 2023 <FaArrowRight size={15}/> Present <br></br> Herndon, Virginia / Remote</p>
                 <hr></hr>
                 <p className='content-para'>
-                  This summer I interned at Hawkeye 360 doing both hardware and software,
-                  specifically on the testing team. During that process y
+                  This past summer through today, I have interned at Hawkeye 360 doing both hardware and software,
+                  specifically on the testing team. During which I have been exposed to many new things such as satellites,
+                  digital signal processing, RF data, testing of electronic hardware, and so much more! I've had the distinct
+                  priviledge of helping develop the testing infrastructure for satellite software.
                 </p>
               </article>
             </div>
@@ -35,6 +37,7 @@ const ActivityContent = () => {
                 <p>
                   I have had the privelege of being a apart of IM at UIUC every year. Starting as a member and working my
                   way up to being in charge of a project on electronics, to finally be in charge of all vehicle electronics.
+                  This was a life changing experience on top of being an incredible learning opportunity.
                 </p>
                 <div className='has-text-centered'><Link to={'/IM'}>See More</Link></div>
               </article>
@@ -44,13 +47,13 @@ const ActivityContent = () => {
             <article class="tile is-child notification is-light act-elem dark-border">
               <img src="/ece_logo.png" alt='UIUC ECE logo'></img>
               <p class="title">ECE 391 - Course Assistant</p>
-              <p class="subtitle">Spring 2023 & Fall 2023</p>
+              <p class="subtitle">Spring 2023 <FaArrowRight size={15}/> Present</p>
               <hr className='is-dark'></hr>
               <div class="content">
                 For the previous semester I got to serve as a course assistant for ECE391, the University of Illinois'
-                premier operating systems class. During this time I was able to help over 200 students in understanding
+                premier operating systems course. During my time I have been able to help over 600 students in understanding
                 operating systems material and also designing their own linux type OS. I have learned alot about how to
-                help others and specifically teach tough material in a digestable fashion.
+                help others with technical tasks and specifically, how to teach tough material in a digestable fashion.
               </div>
             </article>
           </div>
@@ -61,9 +64,9 @@ const ActivityContent = () => {
               <p class="subtitle">Summer 2022</p>
               <hr className='is-dark'></hr>
               <div class="content">
-                During my time at State Farm I worked on the cloud team assisting with the companies move to AWS.
-                Not only did I learn many invaluable skills such as AWS and Terraform, but was able to provide value
-                to State Farm in building out a large document ingestion framework in the cloud.
+                During my time at State Farm I worked on the cloud team assisting with the company's move to AWS.
+                Not only did I learn many invaluable skills such as AWS and Terraform, but I was able to provide value
+                to State Farm by building out a large document ingestion framework in the cloud.
               </div>
             </article>
           </div>
