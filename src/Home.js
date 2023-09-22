@@ -9,13 +9,13 @@ import DevWarning from "./devWarning.js"
 const ActivityContent = () => {
   return (
     <div className='ml-4 mr-4'>
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8">
-          <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child notification is-dark act-elem">
+      <div className="tile is-ancestor">
+        <div className="tile is-vertical is-8">
+          <div className="tile">
+            <div className="tile is-parent is-vertical">
+              <article className="tile is-child notification is-dark act-elem">
                 <img src="/he360-logo.svg" alt='Hawkeye 360 Logo'></img>
-                <p class="title">Hardware/Software Engineering Intern</p>
+                <p className="title">Hardware/Software Engineering Intern</p>
                 <p className='subtitle'>Summer 2023 <FaArrowRight size={15}/> Present <br></br> Herndon, Virginia / Remote</p>
                 <hr></hr>
                 <p className='content-para'>
@@ -26,11 +26,11 @@ const ActivityContent = () => {
                 </p>
               </article>
             </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification act-elem dark-border">
+            <div className="tile is-parent">
+              <article className="tile is-child notification act-elem dark-border">
                 <img src="/IMlogo.png" alt='Illini Motorsports Logo'></img>
-                <p class="title">UIUC Formula SAE Combustion</p>
-                <p class="subtitle">
+                <p className="title">UIUC Formula SAE Combustion</p>
+                <p className="subtitle">
                   2023 <FaArrowRight size={15}/> Electronics Lead<br/>
                   2022 <FaArrowRight size={15}/> Electronics Project Lead<br/>
                   2021 <FaArrowRight size={15}/> Electronics Member<br/>
@@ -45,13 +45,13 @@ const ActivityContent = () => {
               </article>
             </div>
           </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-light act-elem dark-border">
+          <div className="tile is-parent">
+            <article className="tile is-child notification is-light act-elem dark-border">
               <img src="/ece_logo.png" alt='UIUC ECE logo'></img>
-              <p class="title">ECE 391 - Course Assistant</p>
-              <p class="subtitle">Spring 2023 <FaArrowRight size={15}/> Present</p>
+              <p className="title">ECE 391 - Course Assistant</p>
+              <p className="subtitle">Spring 2023 <FaArrowRight size={15}/> Present</p>
               <hr className='is-dark'></hr>
-              <div class="content">
+              <div className="content">
                 For the previous semester I got to serve as a course assistant for ECE391, the University of Illinois'
                 premier operating systems course. During my time I have been able to help over 600 students in understanding
                 operating systems material and also designing their own linux type OS. I have learned alot about how to
@@ -59,13 +59,13 @@ const ActivityContent = () => {
               </div>
             </article>
           </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-light act-elem dark-border">
+          <div className="tile is-parent">
+            <article className="tile is-child notification is-light act-elem dark-border">
               <img src="/state-farm-logo.png" alt='State Farm Logo'></img>
-              <p class="title">Software Engineering Intern</p>
-              <p class="subtitle">Summer 2022</p>
+              <p className="title">Software Engineering Intern</p>
+              <p className="subtitle">Summer 2022</p>
               <hr className='is-dark'></hr>
-              <div class="content">
+              <div className="content">
                 During my time at State Farm I worked on the cloud team assisting with the company's move to AWS.
                 Not only did I learn many invaluable skills such as AWS and Terraform, but I was able to provide value
                 to State Farm by building out a large document ingestion framework in the cloud.
@@ -73,19 +73,18 @@ const ActivityContent = () => {
             </article>
           </div>
         </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification is-dark act-elem">
-            <div class="content">
-              <p class="title">Projects</p>
+        <div className="tile is-parent">
+          <article className="tile is-child notification is-dark act-elem">
+            <div className="content">
+              <p className="title">Projects</p>
               <hr></hr>
               <p className='has-text-centered'>
                 <Link className='subtitle is-5' to="https://github.com/cmmeyer1800/personal_website">This Website!</Link>
-                <p></p>
+                <br></br>
                 <Link className='subtitle is-5' to="https://github.com/JasonRomps/RC5-Accelerator">RC5 Hardware Encryption Accelerator </Link>
               </p>
-              <h2 className='subtitle'></h2>
               <br></br>
-              <p class="has-text-centered subtitle">More Coming Soon ...</p>
+              <p className="has-text-centered subtitle">More Coming Soon ...</p>
             </div>
           </article>
         </div>
