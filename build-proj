@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+echo "[LOG] Beginning Build"
+
+rm -f .env
+
+if [[ 'DEV' == ${ENV} ]]
+then
+    echo "[LOG] Environment Set To Development"
+    cp .env.dev .env
+elif [[ 'TEST' == ${ENV} ]]
+then 
+    echo "[LOG] Environment Set To Test"
+    cp .env.test .env
+elif [[ 'PROD' == ${ENV} ]]
+then
+    echo "[LOG] Environment Set To Production"
+    cp .env.prod .env
+fi
+
+echo "REACT_APP_DATE_TIME='$(date)'" >> .env
+npm run build

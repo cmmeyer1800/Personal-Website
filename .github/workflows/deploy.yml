@@ -27,7 +27,7 @@ jobs:
           rm -f .env
           ln -s .env.prod .env
           npm install
-          make build
+          ENV=PROD ./build-proj
         env:
           CI: ""
       

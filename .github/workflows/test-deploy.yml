@@ -25,7 +25,7 @@ jobs:
           rm -f .env
           ln -s .env.test .env
           npm install
-          make build
+          ENV=TEST ./build-proj
         env:
           CI: ""
       
