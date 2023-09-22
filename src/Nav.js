@@ -6,13 +6,13 @@ const Nav = () => {
     const [navActive, setNavActive] = useState(false);
 
     return (
-        <nav class="navbar mt-1 mb-2 border-bot" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <Link class="ml-1 navbar-item logo" to="/">
+        <nav className="navbar mt-1 border-bot" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand">
+                <Link className="ml-1 navbar-item logo" to="/">
                     <h1 className="subtitle">CM</h1>
                 </Link>
 
-                <a role="button" class={`navbar-burger ${navActive ? 'is-active': ''}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={(e) => {
+                <a role="button" href="/null" className={`navbar-burger ${navActive ? 'is-active': ''}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={(e) => {
                     e.preventDefault()
                     setNavActive(!navActive);
                 }}>
@@ -22,40 +22,26 @@ const Nav = () => {
                 </a>
             </div>
 
-            <div id="navbarBasicExample" class={`navbar-menu ${navActive ? 'is-active': ''}`}>
-                <div class="navbar-start">
-                    <Link class="navbar-item" to="/">Home</Link>
+            <div id="navbarBasicExample" className={`navbar-menu ${navActive ? 'is-active': ''}`}>
+                <div className="navbar-start">
                     <Link className="navbar-item" to="/projects">Projects</Link> 
-                    <Link class="navbar-item" to="/personal">Personal</Link>
-                    {/* <Link class="navbar-item" to="/">Home</Link> */}
+                    <Link className="navbar-item" to="/personal">Personal</Link>
+                    {/* <Link className="navbar-item" to="/">Home</Link> */}
 
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link" href="/null" onClick={(e) => {e.preventDefault()}}>
+                    <div className="navbar-item has-dropdown is-hoverable">
+                        <a className="navbar-link" href="/null" onClick={(e) => {e.preventDefault()}}>
                             More
                         </a>
 
-                        <div class="navbar-dropdown">
-                            <Link class="navbar-item" to="/contact">Contact</Link>
-                            <hr class="navbar-divider"></hr>
-                            <a class="navbar-item">
+                        <div className="navbar-dropdown">
+                            <Link className="navbar-item" to="/contact">Contact</Link>
+                            <hr className="navbar-divider"></hr>
+                            <a className="navbar-item" href="https://github.com/cmmeyer1800/personal_website/issues">
                                 Report an issue
                             </a>
                         </div>
                     </div>
                 </div>
-
-                {/* <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-primary">
-                                <strong>Sign up</strong>
-                            </a>
-                            <a class="button is-light">
-                                Log in
-                            </a>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </nav>
     );

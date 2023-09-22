@@ -2,14 +2,14 @@
 
 if [[ $* == *-y* ]]
 then
-    scp -r ./build/* zeus:/var/www/collinmmeyer.com/html
+    scp -r ./build/* zeus:${DEPLOY_PATH}
     echo Done!
 else
     read -p "Are you SURE you want to deploy, this cannot be undone? " -n 1 -r
     echo    # (optional) move to a new line
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
-        scp -r ./build/* zeus:/var/www/collinmmeyer.com/html
+        scp -r ./build/* zeus:/var/www/dev.collinmmeyer.com/html
 
         echo Done!
     fi
