@@ -1,5 +1,5 @@
-import { rc5Text, peronalSiteText, personalSiteTextExp } from "./projectConst"
-
+import { rc5Text, peronalSiteText } from "./projectConst"
+import Image from "./components/Image";
 import { useState } from "react";
 
 const PersonalSiteBody = (props) => {
@@ -32,7 +32,7 @@ const Project = (props) => {
                         {props.expText}
                     </div>
                     <div className="column is-4">
-                        <img src={props.img1}></img>
+                        <Image src={props.img1}/>
                         <p className="has-text-centered">{props.img1Title}</p>
                     </div>
                 </div>
