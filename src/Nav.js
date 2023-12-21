@@ -26,6 +26,7 @@ const Nav = () => {
                 <div className="navbar-start">
                     <Link className="navbar-item" to="/projects">Projects</Link> 
                     <Link className="navbar-item" to="/personal">Personal</Link>
+                    <Link className="navbar-item" to="/fun">Fun</Link>
                     {/* <Link className="navbar-item" to="/">Home</Link> */}
 
                     <div className="navbar-item has-dropdown is-hoverable">

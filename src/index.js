@@ -6,6 +6,7 @@ import NoPage from "./NoPage.js";
 import PersonalHome from "./PersonalHome.js";
 import ProjectHome from "./ProjectHome.js"
 import Contact from "./Contact.js";
+import Fun from "./Fun.js";
 
 import 'bulma/css/bulma.min.css';
 import './index.css'
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/personal" element={<PersonalHome/>}/>
           <Route path="/projects" element={<ProjectHome/>}/>
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/fun" element={<Fun/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
