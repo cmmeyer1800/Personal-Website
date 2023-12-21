@@ -49,8 +49,8 @@ const ActivityContent = () => {
                 <p className="subtitle">Fall 2024</p>{/*<FaArrowRight size={15}/> Present</p>*/}
                 <hr className='is-dark'></hr>
                 <div className="content">
-                  After talking ECE411 in the Spring of 2023, I applied and was accepted to be a course assistant (CA) for 
-                  the class in the fall of 2024. I look forward to further honing my skills as a teacher and helping students.
+                  After talking ECE411 - Computer Organization in the Spring of 2023, I applied and was accepted to be a course assistant (CA) for 
+                  the class in the fall of 2024. I look forward to further honing my skills as a technical teacher and helping students.
                   Along with this I will be able to further my knowledge of computer architecture and digital logic.
                 </div>
               </article>
@@ -89,7 +89,7 @@ const ActivityContent = () => {
           </div>
         </div>
         <div className="tile is-parent">
-          <article className="tile is-child notification is-dark act-elem">
+          <article className="tile is-child notification is-dark">
             <div className="content">
               <p className="title">Projects</p>
               <hr></hr>
