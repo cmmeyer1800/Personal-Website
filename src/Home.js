@@ -30,7 +30,7 @@ const ActivityContent = () => {
           <div className="tile">
             <div className="tile is-parent">
               <article className="tile is-child notification is-light act-elem dark-border">
-                <img src="/ece_logo.png" alt='UIUC ECE logo'></img>
+                <img src="/ece_logo.webp" alt='UIUC ECE logo'></img>
                 <p className="title">ECE 391 - Course Assistant</p>
                 <p className="subtitle">Spring 2023 - Present</p>
                 <hr className='is-dark'></hr>
@@ -44,7 +44,7 @@ const ActivityContent = () => {
             </div>
             <div className="tile is-parent">
               <article className="tile is-child notification is-light act-elem dark-border">
-                <img src="/ece_logo.png" alt='UIUC ECE logo'></img>
+                <img src="/ece_logo.webp" alt='UIUC ECE logo'></img>
                 <p className="title">ECE 411 - Course Assistant</p>
                 <p className="subtitle">Fall 2024</p>{/*<FaArrowRight size={15}/> Present</p>*/}
                 <hr className='is-dark'></hr>
@@ -58,7 +58,7 @@ const ActivityContent = () => {
           </div>
           <div className="tile is-parent">
             <article className="tile is-child notification act-elem dark-border">
-              <img src="/IMlogo.png" alt='Illini Motorsports Logo'></img>
+              <img src="/IMlogo.webp" alt='Illini Motorsports Logo'></img>
               <p className="title">UIUC Formula SAE Combustion</p>
               <p className="subtitle">
                 2023 <FaArrowRight size={15}/> Electronics Lead<br/>
@@ -76,7 +76,7 @@ const ActivityContent = () => {
           </div>
           <div className="tile is-parent">
             <article className="tile is-child notification is-light act-elem dark-border">
-              <img src="/state-farm-logo.png" alt='State Farm Logo'></img>
+              <img src="/state-farm-logo.webp" alt='State Farm Logo'></img>
               <p className="title">Software Engineering Intern</p>
               <p className="subtitle">Summer 2022</p>
               <hr className='is-dark'></hr>

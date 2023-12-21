@@ -13,14 +13,14 @@ const Image = (props) => {
             </a>
 
             { isFull &&
-            <div class="modal is-active">
-                <div class="modal-background"></div>
-                <div class="modal-content">
-                    <p class="image">
+            <div className="modal is-active">
+                <div className="modal-background"></div>
+                <div className="modal-content">
+                    <p className="image">
                     <img src={props.src} alt={props.alt}></img>
                     </p>
                 </div>
-                <button class="modal-close is-large" aria-label="close" onClick={(e) => {
+                <button className="modal-close is-large" aria-label="close" onClick={(e) => {
                     e.preventDefault();
                     setFull(false);
                 }}></button>
