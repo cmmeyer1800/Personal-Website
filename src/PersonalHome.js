@@ -15,9 +15,9 @@ const Photo = (props) => {
                             e.preventDefault();
                             setExpanded(!expanded)
                         }}>
-                            <span className='mr-1'>?</span>
+                            <span>?</span>
                             { expanded &&
-                                <span>{props.alt}</span>
+                                <span className='ml-1'>{props.alt}</span>
                             }
                         </a>       
                     </div>
@@ -32,9 +32,19 @@ const Gallery = () => {
         <div className="ml-3 mr-3">
             <div className="columns is-multiline">
                 <Photo url="/michigan-whole-team.webp" alt="Winning SAE Michigan 2023"
-                       size_args=""/>
+                       size_args="is-one-third-desktop is-one-half-tablet"/>
                 <Photo url="/fsae-testing-overhead.webp" alt="Testing our FSAE car, shot from drone"
-                       size_args="is-one-third-desktop is-half-tablet"/>
+                       size_args="is-one-third-desktop is-one-half-tablet"/>
+                <Photo url="/quad_cities_bridge.webp" alt="New bridge in Quad Cities"
+                       size_args="is-one-third-desktop is-one-half-tablet"/>
+                <Photo url="/ozarks.webp" alt="Drone shot of Ozarks lake"
+                       size_args="is-one-third-desktop is-one-half-tablet"/>
+                <Photo url="/fsae-harness-work.webp" alt="Building the harness for our FSAE car"
+                       size_args="is-one-third-desktop is-one-half-tablet"/>
+                <Photo url="/fsae-accel-testing.webp" alt="Acceleration testing for our FSAE car"
+                       size_args="is-one-third-desktop is-one-half-tablet"/>
+                <Photo url="/cubs-game.webp" alt="Attending a Cubs game"
+                       size_args="is-one-third-desktop is-one-half-tablet"/>
             </div>
         </div>
     )
@@ -43,6 +53,7 @@ const Gallery = () => {
 const PersonalHome = () =>{
     return (
         <div>
+            <br></br>
             <h1 className="title has-text-centered">Personal Gallery</h1>
             <Gallery />
         </div>
