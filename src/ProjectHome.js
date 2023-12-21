@@ -53,6 +53,9 @@ const ProjectHome = () =>{
     return (
         <div className="ml-2 mr-2">
             <br></br>
+            <div>
+                <a className="button is-link" href="https://wiki.collinmmeyer.com/en/docs/home">View Documentation On My Wiki!</a>
+            </div>
             <br></br>
             <Project
                 title={'My Personal Website - Where You Are Right Now!'}

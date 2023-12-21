@@ -36,6 +36,7 @@ const Nav = () => {
 
                         <div className="navbar-dropdown">
                             <Link className="navbar-item" to="/contact">Contact</Link>
+                            <a className="navbar-item" href="https://wiki.collinmmeyer.com">Wiki</a>
                             <hr className="navbar-divider"></hr>
                             <a className="navbar-item" href="https://github.com/cmmeyer1800/personal_website/issues">
                                 Report an issue
