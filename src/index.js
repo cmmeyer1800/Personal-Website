@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home.js"
 import Layout from "./Layout.js";
 import NoPage from "./NoPage.js";
-import PersonalHome from "./PersonalHome.js";
+import Gallery from "./gallery.js";
 import ProjectHome from "./ProjectHome.js"
 import Contact from "./Contact.js";
 import Fun from "./Fun.js";
+import BlogHome from "./blog/blogHome.js";
+import BlogPost from "./blog/post.js";
 
 import 'bulma/css/bulma.min.css';
 import './index.css'
@@ -18,7 +20,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/personal" element={<PersonalHome/>}/>
+          <Route path="/gallery" element={<Gallery/>}/>
+          <Route path="/blog" element={<BlogHome/>}/>
+          <Route path="/blog/:blogid" element={<BlogPost/>}/>
           <Route path="/projects" element={<ProjectHome/>}/>
           <Route path="/contact" element={<Contact/>} />
           <Route path="/fun" element={<Fun/>} />
