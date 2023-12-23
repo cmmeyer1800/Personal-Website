@@ -1,28 +1,32 @@
 import {useState} from 'react';
 
 const Photo = (props) => {
-    const [expanded, setExpanded] = useState(false);
+    const [fs, setFs] = useState(false);
 
     return (
-        <div className={`column ${props.size_args}`}>
+        <div className={`column ${props.size_args}`} href='#fullscreen'>
             <div className="card">
                 <div className="card-image">
-                    <figure className="image is-3by2">
+                    <figure className="image is-3by2" onClick={(e) => {
+                        e.preventDefault();
+                        setFs(true);
+                    }}>
                         <img src={props.url} alt={props.alt}></img>
                     </figure>
-                    <div className="card-content is-overlay is-clipped">
-                        <a className="tag is-dark" href='#none' onClick={(e) => {
-                            e.preventDefault();
-                            setExpanded(!expanded)
-                        }}>
-                            <span>?</span>
-                            { expanded &&
-                                <span className='ml-1'>{props.alt}</span>
-                            }
-                        </a>       
-                    </div>
                 </div>
             </div>
+            { fs &&
+                <div className="modal is-active">
+                    <div className="modal-background"></div>
+                    <div className="modal-content" style={{width: "65%"}}>
+                        <figure className="image">
+                            <img src={props.url} alt={props.alt}></img>
+                        </figure>
+                        <p className='has-text-white has-text-centered subtitle is-5'>{props.alt}</p>
+                    </div>
+                    <button className="modal-close is-large" aria-label="close" onClick={() => setFs(false)}></button>
+                </div>
+            }
         </div>
     )
 }
@@ -50,7 +54,7 @@ const Gallery = () => {
     )
 }
 
-const PersonalHome = () =>{
+const GalleryTop = () =>{
     return (
         <div>
             <br></br>
@@ -60,4 +64,4 @@ const PersonalHome = () =>{
     )
 }
 
-export default PersonalHome;
+export default GalleryTop;
