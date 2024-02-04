@@ -28,7 +28,7 @@ const BlogHome = () => {
                 <div className="hero-body">
                     <div className="container">
                         <div className="columns">
-                            <div className="column is-8 is-offset-2">
+                            <div className="column is-6 is-offset-3">
                                 <figure className="image">
                                     <img src="/formula-post-win.webp" alt="" style={{borderRadius: "20px"}}></img>
                                 </figure>
