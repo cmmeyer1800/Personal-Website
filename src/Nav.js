@@ -6,7 +6,7 @@ const Nav = () => {
     const [navActive, setNavActive] = useState(false);
 
     return (
-        <nav className="navbar mt-1 border-bot" role="navigation" aria-label="main navigation">
+        <nav className="navbar mt-1" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
                 <Link className="ml-1 navbar-item logo" to="/">
                     <h1 className="subtitle">CM</h1>
@@ -37,7 +37,7 @@ const Nav = () => {
 
                         <div className="navbar-dropdown">
                             <Link className="navbar-item" to="/contact">Contact</Link>
-                            <a className="navbar-item" href="https://wiki.collinmmeyer.com">Wiki</a>
+                            {/* <a className="navbar-item" href="https://wiki.collinmmeyer.com">Wiki</a> */}
                             <hr className="navbar-divider"></hr>
                             <a className="navbar-item" href="https://github.com/cmmeyer1800/personal_website/issues">
                                 Report an issue
