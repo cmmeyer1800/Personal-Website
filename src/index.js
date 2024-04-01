@@ -10,12 +10,15 @@ import Fun from "./Fun.js";
 import BlogHome from "./blog/blogHome.js";
 import BlogPost from "./blog/post.js";
 
+import { ThemeManager } from "./components/ThemeContext.js";
+
 import 'bulma/css/bulma.min.css';
 import './index.css'
 
 
 export default function App() {
   return (
+    <ThemeManager>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -30,6 +33,7 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </ThemeManager>
   );
 }
 

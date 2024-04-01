@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import './Nav.css'
 
+import { ThemeUpdaterButton } from "./components/ThemeContext";
+
 const Nav = () => {
     const [navActive, setNavActive] = useState(false);
 
     return (
-        <nav className="navbar mt-1" role="navigation" aria-label="main navigation">
+        <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-                <Link className="ml-1 navbar-item logo" to="/">
+                <Link className="navbar-item" to="/">
                     <h1 className="subtitle">CM</h1>
                 </Link>
 
@@ -43,6 +45,11 @@ const Nav = () => {
                                 Report an issue
                             </a>
                         </div>
+                    </div>
+                </div>
+                <div className="navbar-end">
+                    <div className="navbar-item">
+                        <ThemeUpdaterButton/>
                     </div>
                 </div>
             </div>
