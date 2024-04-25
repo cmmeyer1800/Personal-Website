@@ -8,10 +8,10 @@ import DevWarning from "./devWarning.js"
 
 const ActivityContent = () => {
   return (
-    <div className='ml-4 mr-4'>
-      <div class="fixed-grid has-3-cols">
-        <div class="grid">
-          <article className="cell box is-col-span-2 dark-border">
+    <div className=''>
+      <div className="columns" style={{marginLeft: "0px"}}>
+        <div className="column is-8">
+          <article className="box dark-border">
             <img src="/he360-logo.svg" alt='Hawkeye 360 Logo'></img>
             <p className="title">Payload DevOps Engineering Intern</p>
             <p className='subtitle'>Summer 2023 - Present <br></br> Herndon, Virginia / Remote</p>
@@ -23,43 +23,36 @@ const ActivityContent = () => {
               priviledge of helping develop the testing infrastructure for satellite software.
             </p>
           </article>
-          <article className="cell box is-row-span-3 dark-border">
-            <div className="content">
-              <p className="title">Projects</p>
-              <hr></hr>
-              <p className='has-text-centered'>
-                <Link className='subtitle is-5' to="https://github.com/cmmeyer1800/personal_website">This Website!</Link>
-                <br></br>
-                <Link className='subtitle is-5' to="https://github.com/JasonRomps/RC5-Accelerator">RC5 Hardware Encryption Accelerator </Link>
-              </p>
-              <br></br>
-              <p className="has-text-centered subtitle">More Coming Soon ...</p>
+          <div className='columns'>
+            <div className='column is-6'>
+              <article className="box dark-border">
+                <img src="/ece_logo.webp" alt='UIUC ECE logo'></img>
+                <p className="title">ECE 391 - Course Assistant</p>
+                <p className="subtitle">Spring 2023 - Present</p>
+                <hr className='is-dark'></hr>
+                <div className="content">
+                  For the last 2 semesters I got to serve as a course assistant for ECE391, the University of Illinois'
+                  premier operating systems course. During my time I have been able to help over 600 students in understanding
+                  operating systems material and also designing their own linux type OS. I have learned alot about how to
+                  help others with technical tasks and specifically, how to teach tough material in a digestable fashion.
+                </div>
+              </article>
             </div>
-          </article>
-          <article className="cell box dark-border">
-            <img src="/ece_logo.webp" alt='UIUC ECE logo'></img>
-            <p className="title">ECE 391 - Course Assistant</p>
-            <p className="subtitle">Spring 2023 - Present</p>
-            <hr className='is-dark'></hr>
-            <div className="content">
-              For the last 2 semesters I got to serve as a course assistant for ECE391, the University of Illinois'
-              premier operating systems course. During my time I have been able to help over 600 students in understanding
-              operating systems material and also designing their own linux type OS. I have learned alot about how to
-              help others with technical tasks and specifically, how to teach tough material in a digestable fashion.
+            <div className='column is-6' style={{paddingRight: "0px"}}>
+              <article className="box dark-border">
+                <img src="/ece_logo.webp" alt='UIUC ECE logo'></img>
+                <p className="title">ECE 411 - Course Assistant</p>
+                <p className="subtitle">Fall 2024</p>{/*<FaArrowRight size={15}/> Present</p>*/}
+                <hr className='is-dark'></hr>
+                <div className="content">
+                  After talking ECE411 - Computer Organization in the Spring of 2023, I applied and was accepted to be a course assistant (CA) for 
+                  the class in the fall of 2024. I look forward to further honing my skills as a technical teacher and helping students.
+                  Along with this I will be able to further my knowledge of computer architecture and digital logic.
+                </div>
+              </article>
             </div>
-          </article>
-          <article className="cell box dark-border">
-            <img src="/ece_logo.webp" alt='UIUC ECE logo'></img>
-            <p className="title">ECE 411 - Course Assistant</p>
-            <p className="subtitle">Fall 2024</p>{/*<FaArrowRight size={15}/> Present</p>*/}
-            <hr className='is-dark'></hr>
-            <div className="content">
-              After talking ECE411 - Computer Organization in the Spring of 2023, I applied and was accepted to be a course assistant (CA) for 
-              the class in the fall of 2024. I look forward to further honing my skills as a technical teacher and helping students.
-              Along with this I will be able to further my knowledge of computer architecture and digital logic.
-            </div>
-          </article>
-          <article className="cell box is-col-span-2 dark-border">
+          </div>
+          <article className="box dark-border">
             <img src="/IMlogo.webp" alt='Illini Motorsports Logo'></img>
             <p className="title">UIUC Formula SAE Combustion</p>
             <p className="subtitle">
@@ -87,8 +80,23 @@ const ActivityContent = () => {
             </div>
           </article>
         </div>
+        <div className="column is-4">
+          <article className="cell box is-row-span-3 dark-border">
+            <div className="content">
+              <p className="title">Projects</p>
+              <hr></hr>
+              <p className='has-text-centered'>
+                <Link className='subtitle is-5' to="https://github.com/cmmeyer1800/personal_website">This Website!</Link>
+                <br></br>
+                <Link className='subtitle is-5' to="https://github.com/JasonRomps/RC5-Accelerator">RC5 Hardware Encryption Accelerator </Link>
+              </p>
+              <br></br>
+              <p className="has-text-centered subtitle">More Coming Soon ...</p>
+            </div>
+          </article>
+        </div>
+        </div>
       </div>
-    </div>
   );
 }
 
@@ -97,7 +105,7 @@ function Home() {
     <>
       <DevWarning />
       <div className='container mt-2'>
-        <div className='columns'>
+        <div className='columns ml-4 mr-4'>
           <div className='column'>
             <div className='container'>
               <h1 className='title mt-4'>About Me:</h1>
@@ -121,12 +129,14 @@ function Home() {
               </p>  */}
             </div>
           </div>
-          <div className='column'>
+          <div className='column mb-4'>
             <img className='rounded-image' src="/collin-sherman-fsae-small.webp" alt="Me sitting on the formula SAE Car I helped build"></img>
           </div>
         </div>
       </div>
       <ActivityContent />
+      <br></br>
+      <br></br>
     </>
   );
 }
