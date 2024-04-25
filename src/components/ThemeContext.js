@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 
-import { FaSun, FaMoon } from "react-icons/fa6";
+import { FaSun, FaMoon, FaM } from "react-icons/fa6";
 
 const globals = {
     cookiesPrefix: 'collin-meyer'
@@ -50,10 +50,10 @@ const ThemeUpdaterButton = () => {
             {({ theme, toggleTheme }) => (
                 <button className="icon-text" onClick={toggleTheme}>
                     <span className="icon">
-                        {theme === 'dark' ? <FaSun /> : <FaMoon />}
+                        {theme === 'dark' ? <FaMoon /> : <FaSun />}
                     </span>
                     <span>
-                        {theme === 'dark' ? 'Light' : 'Dark'}
+                        {theme === 'dark' ? 'Dark' : 'Light'}
                     </span>
                 </button>
             )}
