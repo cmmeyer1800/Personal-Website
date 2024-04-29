@@ -5,13 +5,13 @@ const Contact = () => {
         <div className="columns">
             <div className="column has-text-centered">
                 <Link to="https://www.linkedin.com/in/collin-meyer-88593a206/">
-                    <img src="/linkedin.webp" alt="Reach me on LinkedIn">
+                    <img src="/img/linkedin.webp" alt="Reach me on LinkedIn">
                     </img>
                 </Link>
             </div>
             <div className="column has-text-centered">
                 <Link to="mailto:collinmmeyer@gmail.com">
-                    <img src="/mail_logo.webp" alt="Send me and email">
+                    <img src="/img/mail_logo.webp" alt="Send me and email">
                     </img>
                 </Link>
             </div>
