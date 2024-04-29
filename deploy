@@ -2,6 +2,7 @@
 
 if [[ $* == *-y* ]]
 then
+    ssh zeus "rm -rf ${DEPLOY_PATH}/*"
     scp -r ./build/* zeus:${DEPLOY_PATH}
     echo Done!
 else
@@ -9,6 +10,7 @@ else
     echo    # (optional) move to a new line
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
+        ssh zeus "rm -rf /var/www/dev.collinmmeyer.com/html/*"
         scp -r ./build/* zeus:/var/www/dev.collinmmeyer.com/html
 
         echo Done!
