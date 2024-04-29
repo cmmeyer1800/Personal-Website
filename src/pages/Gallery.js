@@ -35,19 +35,19 @@ const Gallery = () => {
     return (
         <div className="ml-3 mr-3">
             <div className="columns is-multiline">
-                <Photo url="/michigan-whole-team.webp" alt="Winning SAE Michigan 2023"
+                <Photo url="/img/michigan-whole-team.webp" alt="Winning SAE Michigan 2023"
                        size_args="is-one-third-desktop is-one-half-tablet"/>
-                <Photo url="/fsae-testing-overhead.webp" alt="Testing our FSAE car, shot from drone"
+                <Photo url="/img/fsae-testing-overhead.webp" alt="Testing our FSAE car, shot from drone"
                        size_args="is-one-third-desktop is-one-half-tablet"/>
-                <Photo url="/quad_cities_bridge.webp" alt="New bridge in Quad Cities"
+                <Photo url="/img/quad_cities_bridge.webp" alt="New bridge in Quad Cities"
                        size_args="is-one-third-desktop is-one-half-tablet"/>
-                <Photo url="/ozarks.webp" alt="Drone shot of Ozarks lake"
+                <Photo url="/img/ozarks.webp" alt="Drone shot of Ozarks lake"
                        size_args="is-one-third-desktop is-one-half-tablet"/>
-                <Photo url="/fsae-harness-work.webp" alt="Building the harness for our FSAE car"
+                <Photo url="/img/fsae-harness-work.webp" alt="Building the harness for our FSAE car"
                        size_args="is-one-third-desktop is-one-half-tablet"/>
-                <Photo url="/fsae-accel-testing.webp" alt="Acceleration testing for our FSAE car"
+                <Photo url="/img/fsae-accel-testing.webp" alt="Acceleration testing for our FSAE car"
                        size_args="is-one-third-desktop is-one-half-tablet"/>
-                <Photo url="/cubs-game.webp" alt="Attending a Cubs game"
+                <Photo url="/img/cubs-game.webp" alt="Attending a Cubs game"
                        size_args="is-one-third-desktop is-one-half-tablet"/>
             </div>
         </div>

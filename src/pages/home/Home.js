@@ -3,7 +3,7 @@ import './Home.css';
 import { Link } from "react-router-dom";
 import { FaArrowRight } from 'react-icons/fa'
 
-import DevWarning from "./devWarning.js"
+import DevWarning from "../../components/devWarning.js"
 
 
 const ActivityContent = () => {
@@ -12,7 +12,7 @@ const ActivityContent = () => {
       <div className="columns" style={{marginLeft: "0px"}}>
         <div className="column is-8">
           <article className="box dark-border">
-            <img src="/he360-logo.svg" alt='Hawkeye 360 Logo'></img>
+            <img src="/img/he360-logo.svg" alt='Hawkeye 360 Logo'></img>
             <p className="title">Payload DevOps Engineering Intern</p>
             <p className='subtitle'>Summer 2023 - Present <br></br> Herndon, Virginia / Remote</p>
             <hr></hr>
@@ -26,7 +26,7 @@ const ActivityContent = () => {
           <div className='columns'>
             <div className='column is-6'>
               <article className="box dark-border">
-                <img src="/ece_logo.webp" alt='UIUC ECE logo'></img>
+                <img src="/img/ece_logo.webp" alt='UIUC ECE logo'></img>
                 <p className="title">ECE 391 - Course Assistant</p>
                 <p className="subtitle">Spring 2023 - Present</p>
                 <hr className='is-dark'></hr>
@@ -40,7 +40,7 @@ const ActivityContent = () => {
             </div>
             <div className='column is-6' style={{paddingRight: "0px"}}>
               <article className="box dark-border">
-                <img src="/ece_logo.webp" alt='UIUC ECE logo'></img>
+                <img src="/img/ece_logo.webp" alt='UIUC ECE logo'></img>
                 <p className="title">ECE 411 - Course Assistant</p>
                 <p className="subtitle">Fall 2024</p>{/*<FaArrowRight size={15}/> Present</p>*/}
                 <hr className='is-dark'></hr>
@@ -53,7 +53,7 @@ const ActivityContent = () => {
             </div>
           </div>
           <article className="box dark-border">
-            <img src="/IMlogo.webp" alt='Illini Motorsports Logo'></img>
+            <img src="/img/IMlogo.webp" alt='Illini Motorsports Logo'></img>
             <p className="title">UIUC Formula SAE Combustion</p>
             <p className="subtitle">
               2023 <FaArrowRight size={15}/> Electronics Lead<br/>
@@ -69,7 +69,7 @@ const ActivityContent = () => {
             <div className='has-text-centered'><Link to={'/IM'}>See More</Link></div>
           </article>
           <article className="cell box dark-border">
-            <img src="/state-farm-logo.webp" alt='State Farm Logo'></img>
+            <img src="/img/state-farm-logo.webp" alt='State Farm Logo'></img>
             <p className="title">Software Engineering Intern</p>
             <p className="subtitle">Summer 2022</p>
             <hr className='is-dark'></hr>
@@ -121,16 +121,10 @@ function Home() {
                 </h3>
                 <h3 className='subtitle has-text-centered'><span className='is-underlined'>Here's some of what I have done, and am doing</span>:</h3>
               </div>
-              {/* <div className='has-text-centered'>
-                <FaArrowDown size={130}/>
-              </div> */}
-              {/* <p className='box'>
-                👋 Hi, My Name Is Collin Meyer
-              </p>  */}
             </div>
           </div>
           <div className='column mb-4'>
-            <img className='rounded-image' src="/collin-sherman-fsae-small.webp" alt="Me sitting on the formula SAE Car I helped build"></img>
+            <img className='rounded-image' src="/img/collin-sherman-fsae-small.webp" alt="Me sitting on the formula SAE Car I helped build"></img>
           </div>
         </div>
       </div>

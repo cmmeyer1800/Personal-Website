@@ -1,14 +1,13 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home.js"
-import Layout from "./Layout.js";
-import NoPage from "./NoPage.js";
-import Gallery from "./gallery.js";
-import ProjectHome from "./ProjectHome.js"
-import Contact from "./Contact.js";
-import Fun from "./Fun.js";
+import Home from "./pages/home/Home.js"
+import Layout from "./components/Layout.js";
+import NoPage from "./pages/noPage/NoPage.js";
+import Gallery from "./pages/Gallery.js";
+import ProjectHome from "./projects/ProjectHome.js"
+import Contact from "./pages/Contact.js";
 import BlogHome from "./blog/blogHome.js";
-import BlogPost from "./blog/post.js";
+import BlogPost from "./blog/Post.js";
 
 import { ThemeManager } from "./components/ThemeContext.js";
 
@@ -28,7 +27,6 @@ export default function App() {
           <Route path="/blog/:blogid" element={<BlogPost/>}/>
           <Route path="/projects" element={<ProjectHome/>}/>
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/fun" element={<Fun/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

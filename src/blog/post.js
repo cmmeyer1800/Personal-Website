@@ -1,22 +1,17 @@
 import {useParams} from "react-router-dom";
-import FirstPost from "./posts/first.js";
-import SecondBlogPost from "./posts/Second.js";
+import posts from "./blogInfo.js";
 
-import NoPage from "../NoPage.js";
+import NoPage from "../pages/noPage/NoPage.js";
 
-const POSTS = {
-    "2023-12-22": <FirstPost/>,
-    "2024-03-31": <SecondBlogPost/>
-}
 
 const BlogPost = (props) => {
     const {blogid} = useParams();
 
-    if(!(blogid in POSTS)) {
+    if(!(blogid in posts) || !posts[blogid].publish) {
         return (<NoPage/>)
     }
     
-    return (POSTS[blogid])
+    return (posts[blogid].post)
 }
 
 export default BlogPost;

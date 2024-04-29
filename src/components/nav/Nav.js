@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import './Nav.css'
 
-import { ThemeUpdaterButton } from "./components/ThemeContext";
+import { ThemeUpdaterButton } from "../ThemeContext";
 
 const Nav = () => {
     const [navActive, setNavActive] = useState(false);

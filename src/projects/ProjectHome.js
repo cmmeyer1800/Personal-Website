@@ -1,5 +1,5 @@
-import { rc5Text, peronalSiteText } from "./projectConst"
-import Image from "./components/Image";
+import { rc5Text, peronalSiteText } from "../const/projectConst"
+import Image from "../components/Image";
 import { useState } from "react";
 
 const PersonalSiteBody = (props) => {
