@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 
-import { FaSun, FaMoon, FaM } from "react-icons/fa6";
+import { FaSun, FaMoon } from "react-icons/fa6";
 
 const globals = {
     cookiesPrefix: 'collin-meyer'

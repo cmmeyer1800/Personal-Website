@@ -5,7 +5,7 @@ const FirstBlogPost = () => {
     return (
         <div className='hero mb-4'>
                 <figure className='image mt-1'>
-                    <img src="/skyline.jpeg" alt=""></img>
+                    <img src="/img/skyline.webp" alt=""></img>
                 </figure>
                 <div className="columns mt-2 ml-1 mr-1">
                     <div className="column is-6 is-offset-3">
@@ -34,7 +34,7 @@ const FirstBlogPost = () => {
                                 </div>
                                 <div className='column'>
                                     <figure className='image mt-1'>
-                                        <img src="/me-working-on-fsae.jpg" alt="" style={{borderRadius: "15px"}}></img>
+                                        <img src="/img/me-working-on-fsae.webp" alt="" style={{borderRadius: "15px"}}></img>
                                     </figure>
                                     <div className='has-text-centered'>Me working on FSAE vehicle</div>
                                 </div>
@@ -67,7 +67,7 @@ const FirstBlogPost = () => {
                                 I hope to see you in the next post, and I hope you enjoy the content I have planned. Now here's a cute picture of my dog...
                             </p>
                             <figure className='image mt-1'>
-                                <img src="/dodo.jpg" alt="" style={{borderRadius: "15px"}}></img>
+                                <img src="/img/dodo.webp" alt="" style={{borderRadius: "15px"}}></img>
                             </figure>
                         </div>
                     </div>

@@ -26,6 +26,7 @@ jobs:
         run: |
           npm install
           ENV=PROD ./build-proj
+          ls -al build
         env:
           CI: ""
       

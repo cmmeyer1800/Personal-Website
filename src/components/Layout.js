@@ -1,13 +1,12 @@
 import { Outlet } from "react-router-dom";
 
-import Nav from "./Nav.js"
+import Nav from "./nav/Nav.js"
 import Footer from "./Footer.js";
 
 const Layout = () => {
   return (
     <div className="hero is-fullheight">
         <Nav />
-
         <Outlet />
         <Footer/>
     </div>
