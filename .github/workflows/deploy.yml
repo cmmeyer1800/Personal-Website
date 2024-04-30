@@ -26,16 +26,10 @@ jobs:
         run: |
           npm install
           ENV=PROD ./build-proj
+          ls -al build
         env:
           CI: ""
       
       - name: Deploy to Cloud
         run: |
           DEPLOY_PATH=${{ secrets.TARGET_DIR }} ./deploy -y
-
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-artifact
-          path: |
-            build
