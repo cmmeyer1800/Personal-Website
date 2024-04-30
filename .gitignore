@@ -27,3 +27,5 @@ deploy
 photo_stage/
 
 venv/
+
+.env
