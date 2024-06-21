@@ -13,8 +13,10 @@ const ActivityContent = () => {
         <div className="column is-8">
           <article className="box dark-border">
             <img src="/img/he360-logo.svg" alt='Hawkeye 360 Logo'></img>
-            <p className="title">Payload DevOps Engineering Intern</p>
-            <p className='subtitle'>Summer 2023 - Present <br></br> Herndon, Virginia / Remote</p>
+            <p className="title">Payload DevOps Engineer</p>
+              <span className='subtitle'>Summer 2023 - Present</span> <br></br>
+              <span className='subtitle'>Herndon, Virginia / Remote</span> <br></br> 
+              Previously: Intern
             <hr></hr>
             <p className='content-para'>
               This past summer through today, I have interned at Hawkeye 360 doing both hardware and software,

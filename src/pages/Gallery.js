@@ -35,6 +35,8 @@ const Gallery = () => {
     return (
         <div className="ml-3 mr-3">
             <div className="columns is-multiline">
+                <Photo url="/img/germany.webp" alt="Trip to Germany's Rhineland"
+                       size_args="is-one-third-desktop is-one-half-tablet"/>
                 <Photo url="/img/michigan-whole-team.webp" alt="Winning SAE Michigan 2023"
                        size_args="is-one-third-desktop is-one-half-tablet"/>
                 <Photo url="/img/fsae-testing-overhead.webp" alt="Testing our FSAE car, shot from drone"
